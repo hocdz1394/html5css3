@@ -1,0 +1,180 @@
+<?php
+  session_start();
+  if(isset ($_SESSION['user'])&&($_SESSION['user'])!=""){
+    $user=$_SESSION['user'];
+
+  }
+  if(isset ($_SESSION['pass'])&&($_SESSION['pass'])!=""){
+    $user=$_SESSION['pass'];
+  }
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user</title>
+    <link rel="stylesheet" href="../css/user.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="welcome">Chào mừng bạn đến với không gian nội thất</div>
+    <header>
+      <div class="menu">
+          <div class="logo col1"><a href="./index.html"><img src="../img/logo.png" alt=""></a></div>
+          <nav id="col5" class="col5">
+              <ul>
+                  <li><a href="./index.html">Trang chủ</a></li>
+                  <li><a href="./product.html">Sản phẩm</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="./contact.html">Liên hệ</a></li>
+              </ul>
+          </nav>
+          <div class="search col2_5">
+              <input type="search" name="" id="" placeholder="   Tìm kiếm...">
+              <div class="find"><ion-icon name="search"></ion-icon></div>
+          </div>
+          <div class="directional-icon col1_5">
+              <a href="./cart.html"><ion-icon name="cart"></ion-icon><p id="cartnub"></p></a>
+              <a href="./account.html"><ion-icon name="person-circle-outline"></ion-icon></a>
+              <div class="number-cart"></div>
+          </div>
+      </div>
+  </header>  
+    <br><br>
+    <div class="container">
+      <div class="bar-category">
+        <div class="user-logo"> <a href="./index.html"><img src="../img/logo.png" alt=""></a> </div>
+        <div class="list-catgs">
+          <div class="list-catg cur"><a href="./"><ion-icon name="person-circle-outline"></ion-icon><p>Thông tin tài khoản</p></a></div>
+          <div class="list-catg"><a href="./history.html"><ion-icon name="time-outline"></ion-icon><p>Lịch sử mua hàng</p></a></div>
+          <div class="list-catg"><a href="#"><ion-icon name="heart-circle-outline"></ion-icon><p>Sản phẩm yêu thích</p></a></div>
+          <div class="list-catg"><a href="#"><ion-icon name="settings-outline"></ion-icon><p>Cài đặt chỉnh sửa </p></a></div>
+        </div>
+      </div>
+      <div class="bar-category-right">
+        <div class="user-header">
+          <h2>Tài khoản của tôi</h2>
+          <div class="user-header-right">
+            <img src="../img/myavatar.png" alt="">
+            <div class="user-header-right-name">Nguyen Quoc Hoc</div>
+          </div>
+        </div>
+        <div class="user-body">
+          <div class="cover-photo"><img src="../img/coverphoto.jpg" alt=""></div>
+          <div class="cover-photot"></div>
+          <div class="user-body-main">
+            <div class="profile-left">
+              <div class="profile-left-avatar">
+                <img src="../img/myavatar.png" alt="">
+                <div class="profile-left-avatar-name">Nguyen Quoc Hoc</div>
+                <div class="profile-left-avatar-address">Fpoly-HCM</div>
+              </div>
+              <!-- <div class="profile-left-textt">Sở thích</div>
+              <div class="profile-left-text"><ion-icon name="walk-outline"></ion-icon>Chạy bộ</div>
+              <div class="profile-left-text"><ion-icon name="football"></ion-icon>Bóng đá</div>
+              <div class="profile-left-text"><ion-icon name="musical-notes"></ion-icon>Nghe nhạc</div> -->
+              <div class="profile-left-buttom">
+                <a href="#"><div class="nut-profile" ></div></a>
+                <input type="text" name="" id="">
+              </div>
+            </div>
+
+            <div class="profile-rights">
+            <form action="#">
+              <div class="profile-right">
+                  <div class="profile-right-input">
+                  <p>Tên</p>
+                  <input type="text" value="Nhập username" placeholder="Nhập tên" name="" id="">
+                </div>
+                <div class="profile-right-input">
+                  <p>Mật khẩu</p>
+                  <input type="password" value="" placeholder="Nhập mật khẩu" name="" id="">
+                </div>
+                
+              </div>
+              <div class="profile-right-input ngaysinh ">
+                <p>Số điện thoại</p>
+                <input class="wh" type="text" placeholder="Nhập số điện thoại" name="" id="">
+              </div>
+              <div class="ngaysinh">
+                <p>Email</p>
+                <input type="text" placeholder="Nhập email" name="" id="">
+              </div>
+              </form>
+              <div class="profile-btn">
+                  <input class="update" type="submit" name="capnhat" value="Cập nhật">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+         <footer>
+          <div class="text-about">
+              <div class="text1 col5">
+                  <img src="./img/logo2.png" alt="">
+                  <p>Condimentum adipiscing vel neque dis nam 
+                      parturient orci at scelerisque neque dis nam 
+                      parturient.
+                  </p>
+                  <div class="icon-text-about">
+                      <ion-icon name="paper-plane-outline"></ion-icon><span>451 Wall Street, UK, London</span><br>
+                      <ion-icon name="phone-portrait-outline"></ion-icon><span>Phone: (064) 332-1233</span><br>
+                      <ion-icon name="mail-outline"></ion-icon><span>Fax: (099) 453-1357</span>
+                  </div>
+              </div>
+              <div class="text2 col2">
+                  <span>OUR STORES</span>
+                  <ul>
+                      <li>New York</li>
+                      <li>London SF</li>
+                      <li>Edinburgh</li>
+                      <li>Los Angeles</li>
+                      <li>Chicago</li>
+                      <li>Las Vegas</li>
+                  </ul>
+              </div>
+              <div class="text2 col2">
+                  <span>OUR STORES</span>
+                  <ul>
+                      <li>New York</li>
+                      <li>London SF</li>
+                      <li>Edinburgh</li>
+                      <li>Los Angeles</li>
+                      <li>Chicago</li>
+                      <li>Las Vegas</li>
+                  </ul>
+              </div>
+              <div class="text2 col2">
+                  <span>OUR STORES</span>
+                  <ul>
+                      <li>New York</li>
+                      <li>London SF</li>
+                      <li>Edinburgh</li>
+                      <li>Los Angeles</li>
+                      <li>Chicago</li>
+                      <li>Las Vegas</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="icon-internet">
+              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon name="logo-instagram"></ion-icon>
+              <ion-icon name="logo-youtube"></ion-icon>
+              <ion-icon name="logo-twitter"></ion-icon>
+          </div>
+          <div class="dc">project created by NguyenQuocHoc - PS28717 on 5-22-2023</div>
+      </footer>
+  </body>
+  </html>  

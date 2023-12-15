@@ -1,0 +1,43 @@
+:root{
+  --primary-color: #593A27;
+  --secondary-color: #faf6ee;
+  --thirt:#dfe0df;
+  --black:#000000;
+  --white:#fff;
+}
+.bang-lss{
+  width: 100%;
+}
+.bang-ls{
+  height: 45px;
+  background-color: lightgray;
+  border-bottom: 1px solid black;
+}
+table{
+  border: none;
+  border-collapse: collapse;
+}
+.hrsp{
+  height: 90px;
+  border-bottom: 1px solid lightgray;
+}
+td img{
+  width: 70px;
+  height: 70px;
+  border: 1px solid
+  
+}
+td {
+  text-align: center;
+
+}
+.containerr{
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  top: 2.25rem;
+}
+
+

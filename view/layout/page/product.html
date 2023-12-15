@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body onload="loadSo()" >
+    <div class="welcome">Chào mừng bạn đến với không gian nội thất</div>
+    <div class="container">
+        <header>
+            <div class="menu">
+                <div class="logo col1"><a href="./index.html"><img src="../img/logo.png" alt=""></a></div>
+                <nav id="col5"  class="col5">
+                    <ul>
+                        <li><a href="./index.html">Trang chủ</a></li>
+                        <li><a href="./product.html">Sản phẩm </a></li>
+                        <li><a href="#">Bài viết</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+
+                        <div id="directional-icon">
+                            <a href="./page/cart.html"><ion-icon name="cart">Thêm vào giỏ hàng</ion-icon></a>
+                            <a href="./page/account.html"><ion-icon name="person-circle-outline"></ion-icon></a>
+                        <div id="number-cart"></div>
+                        
+                    </ul>
+                </nav>
+                <div class="search col2_5">
+                    <input id="find" type="search" name="" id="" placeholder="   search...">
+                    <div  class="find"><ion-icon name="search"></ion-icon></div>
+                </div>
+                <div class="directional-icon col1_5">
+                    <a href="./cart.html"><ion-icon name="cart"></ion-icon><p id="cartnub"></p></a>
+                    <a href="./account.html"><ion-icon name="person-circle-outline"></ion-icon></a>
+                    <div class="number-cart"></div>
+                </div>
+                <div class="menu__list">
+                    <ion-icon id="menu__list" name="menu"></ion-icon>
+                </div>
+            </div>
+            <div class="search2 col2_5">
+                <input type="search" name="" id="find2" placeholder="   search...">
+                <div class="find2"><ion-icon name="search"></ion-icon></div>
+            </div>
+        </header>
+        <main>
+            <section class="section1">
+                <div class="top-product">
+                    <div class="left-product col5">
+                        <img class="img-main" id="showImg" src="/img/product/shop1.png" name="hover_exchan"  alt="" 
+                        onmouseover="overEvent();"
+                        onmouseout="outEvent();"  
+                        >
+                        <div class="img-mini">
+                            <img id="branch" onclick="show()" src="/img/product/shop1a.webp" onmouseover="overEvent();"  onmouseout="outEvent();" alt="">
+                            <img id="branch" onclick="show1()" src="/img/product/shop1b.webp" onmouseover="overEvent1();" onmouseout="outEvent();" alt="">
+                            <img id="branch" onclick="show2()" src="/img/product/shop1c.webp" onmouseover="overEvent2();" onmouseout="outEvent();" alt="">
+                        </div>
+                    </div>
+                    <div class="right-product col5">
+                        <div class="name-product">
+                            <h2>Sofa Annie xinh xắn</h2>
+                            <div class="line"></div>
+                        </div>
+                        <div class="price-product">
+                            <div class="price-sale">4.300.000 đ</div>
+                            <div class="price-main">4.990.000 đ</div>
+                        </div>
+                        <div class="colors"> 
+                            <div class="text-color">Màu sắc :</div>
+                            <div onclick="show()" class="dot-color1"></div>
+                            <div onclick="show1()" class="dot-color2"></div>
+                            <div onclick="show2()" class="dot-color3"></div>
+                        </div>
+                        <div class="quantity">
+                            <div class="text-quantt">Số lượng :</div>
+                            <div class="btn-quantt">
+                                <div class="minus-quantt">-</div>
+                                <div class="number-quantt">1</div>
+                                <div class="plus-quantt">+</div>
+                            </div>
+                        </div>
+                        <div class="Specifications">
+                            <span>Thông số :</span>
+                            <p>- Chất liệu: Vải bọc nỉ, canvas...</p>
+                            <p>- Chiều dài (cm): 180</p>
+                            <p>- Chiều rộng (cm): 80</p>
+                            <p>- chiều cao (cm): 80</p>
+                            <p>- Màu sắc : be, xám ,trắng, hồng ...</p>
+                        </div>
+                        <a class="btnatc" href="./cart.html"><button>Thêm giỏ hàng</button></a>
+                    </div>
+                </div>
+                <div class="bottom-products">
+                    <h3>Sản phẩm tương tự</h3>
+                    <div class="bottom-product">
+                        <div class="similar">
+                            <img src="/img/product/sp-mini.png" alt="">
+                            <div class="text">
+                                <div class="text-tilte">Bàn trà Mesa phong cách Bắc Âu tối giản và hiện đại</div>
+                                <div class="icon">
+                                    <span>$ 387.0</span>
+                                    <ion-icon name="cart"></ion-icon>
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="similar">
+                            <img src="/img/product/sp-mini.png" alt="">
+                            <div class="text">
+                                <div class="text-tilte">Bàn trà Mesa phong cách Bắc Âu tối giản và hiện đại</div>
+                                <div class="icon">
+                                    <span>$ 387.0</span>
+                                    <ion-icon name="cart"></ion-icon>
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="similar">
+                            <img src="/img/product/sp-mini.png" alt="">
+                            <div class="text">
+                                <div class="text-tilte">Bàn trà Mesa phong cách Bắc Âu tối giản và hiện đại</div>
+                                <div class="icon">
+                                    <span>$ 387.0</span>
+                                    <ion-icon name="cart"></ion-icon>
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section2">
+                <div class="box-left">
+                    <h3>Mô tả sản phẩm</h3>
+                    <div class="box_left--text">
+                    <p>
+                        - Sofa Annie vừa đơn giản vừa hiện đại phù hợp với những không gian không quá rộng và tối giản.
+                    </p>
+                    <p>
+                        - Thiết kế tối giản của chiếc ghế sofa Annie này giúp bạn dễ dàng kết hợp với nhiều kiểu dáng ghế sofa khác nhau.
+                         Sự lựa chọn linh hoạt về màu sắc vải khiến bộ sofa Annie này dễ dàng phù hợp với mọi không gian.
+                    </p>
+                    <p>
+                        - Sofa Annie tinh tế, tối giản thích hợp cho phòng khách, phòng đọc sách, studio,
+                        shop thời trang hiện đại… là sự lựa chọn yêu thích của nhiều khách hàng trong thời gian qua.
+                    </p>
+                    </div>
+                </div>
+                <div class="box-right">
+                    <img src="/img/product/product-ct.jpeg" alt="">
+                </div>
+            </section>
+            <section class="section3">
+                <video autoplay loop  src="/img/product/sofa-product.mp4"></video>
+            </section>
+            <section class="section4">
+                <div class="evaluate">
+                    <div class="evaluate-left">
+                        <div class="evaluate-number">
+                            <div class="nb">0.0</div>
+                                <div class="icon">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </div>
+                            <span> 0 Đánh giá</span>
+                        </div>
+                        <div class="starts">
+                            <div class="start">5 sao <div class="div0"></div> 0% </div>
+                            <div class="start">4 sao <div class="div0"></div> 0% </div>
+                            <div class="start">3 sao <div class="div0"></div> 0% </div>
+                            <div class="start">2 sao <div class="div0"></div> 0% </div>
+                            <div class="start">1 sao <div class="div1"></div> 0% </div>
+                        </div>
+                    </div>
+                    <div class="evaluate-right">
+                        <div class="evaluate-right--text">Hiện tại không có đánh giá nào</div>
+                        <div class="evaluate-right--bnt">Viết đánh giá</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="text-about">
+                <div class="text1 col5">
+                    <img src="/img/logo2.png" alt="">
+                    <p>Condimentum adipiscing vel neque dis nam 
+                        parturient orci at scelerisque neque dis nam 
+                        parturient.
+                    </p>
+                    <div class="icon-text-about">
+                        <ion-icon name="paper-plane-outline"></ion-icon><span>451 Wall Street, UK, London</span><br>
+                        <ion-icon name="phone-portrait-outline"></ion-icon><span>Phone: (064) 332-1233</span><br>
+                        <ion-icon name="mail-outline"></ion-icon><span>Fax: (099) 453-1357</span>
+                    </div>
+                </div>
+                <div class="text2 col2">
+                    <span>OUR STORES</span>
+                    <ul>
+                        <li>New York</li>
+                        <li>London SF</li>
+                        <li>Edinburgh</li>
+                        <li>Los Angeles</li>
+                        <li>Chicago</li>
+                        <li>Las Vegas</li>
+                    </ul>
+                </div>
+                <div class="text2 col2">
+                    <span>OUR STORES</span>
+                    <ul>
+                        <li>New York</li>
+                        <li>London SF</li>
+                        <li>Edinburgh</li>
+                        <li>Los Angeles</li>
+                        <li>Chicago</li>
+                        <li>Las Vegas</li>
+                    </ul>
+                </div>
+                <div class="text2 col2">
+                    <span>OUR STORES</span>
+                    <ul>
+                        <li>New York</li>
+                        <li>London SF</li>
+                        <li>Edinburgh</li>
+                        <li>Los Angeles</li>
+                        <li>Chicago</li>
+                        <li>Las Vegas</li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+            <div class="icon-internet">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+        </footer>
+        <div class="dc">project created by NguyenQuocHoc - PS28717 on 5-22-2023</div>
+        <script src="/js/product.js"></script>
+        <script src="/js/home.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#menu__list").click(function(){
+                    $("#col5").slideToggle();
+                });
+            })
+        </script>
+</body>
+</html>

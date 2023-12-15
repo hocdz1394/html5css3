@@ -1,0 +1,238 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  max-width: 100%;
+}
+html{
+  font-size: 100%;
+}
+:root{
+  --primary-color: #593A27;
+  --secondary-color: #faf6ee;
+  --thirt:#dfe0df;
+  --black:#000000;
+  --white:#fff;
+}
+.col1{
+  width: 8.33%;
+  text-align: center;
+}
+.col1_5{
+  width: 12%;
+}
+.col2{
+  width: 16.66%;
+}
+.col2_5{
+  width: 20%;
+}.col4{
+  width: 32%;
+}
+.col3-5{
+  width: 30%;
+}
+.col6{
+  width: 68%;
+}
+.col5{
+  width: 40%;
+}
+.welcome{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  width: 100%;
+  height: 2.25rem;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+
+}
+body{
+  background-color: var(--secondary-color);
+}
+header{
+  max-width: 1192px;
+  margin: 0 auto;
+  border-bottom: var(--primary-color) 0.5px solid;
+}
+.container{
+
+  top: 2.25rem;
+  /* background-image: url(/img/home/homemain1.jpeg);
+  background-repeat: no-repeat;
+  object-fit: cover; */
+  width: 100%;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  /* background: rgba(0, 0, 0, 0.5); */
+
+}
+
+.logo img{
+  width: 4.25rem;
+  cursor: pointer;
+  /* padding: 0.25rem; */
+  
+}
+nav ul {
+  display: flex;
+}
+.col5 ul li{
+  list-style-type: none;
+  padding: 1.5rem 1.25rem 1.2rem 1.25rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.col5 ul li a{
+ text-decoration: none;
+ color: var(--black);
+}
+.col5 ul li a:hover{
+  color: var(--primary-color);
+}
+ul li :hover{
+  color: var(--primary-color);
+  border-bottom: var(--primary-color) 2.5px solid;
+}
+.search{
+  display: flex;
+  padding-top: 1rem;
+  cursor: pointer;
+}
+.search input{
+  width: 85%;
+  height: 1.875rem;
+  border-radius:0.125rem 0rem 0rem 0.125rem;
+  border: 1px solid var(--primary-color) ;
+
+}
+.find{
+  width: 1.875rem;
+  height: 1.875rem;
+  background-color: var(--primary-color);
+  border-radius:0 0.125rem 0.125rem 0;
+}
+.find ion-icon{
+  background-color: transparent;
+  padding: 0.3125rem 0rem 0rem 0.3125rem ;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+.directional-icon{
+  display: flex;
+  justify-content:space-between;
+}
+
+.directional-icon a:hover{
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.cart-right{
+  margin: 1rem;
+}
+.cart-right h2{
+  padding: 0.7rem;
+}
+.bill{
+  border: 1px solid lightgray;
+  border-radius: 0.3rem;
+  background-color: #e6e4e4;
+}
+.bill input:hover{
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: 0.5px solid var(--primary-color);
+}
+.items{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+  border-bottom: 1px solid  lightgray;
+}
+.bold{
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.impot{
+  color: red;
+  font-size: 1.3rem;
+}
+.thank{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.thank>img{
+  width: 300px;
+}
+.thank>p{
+  width: 500px;
+  margin: 0 auto;
+}
+.btn-sc{
+  width: 100%;
+  margin-top: 2rem;
+}
+.btn-sc-tt, .btn-sc-td{
+  background-color: #6A4D3B;
+  text-decoration: none;
+  color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 10px;
+}
+/* ---------------------------------**body------------ */
+/* =================================bar-cart================================= */
+.cart-top-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+.bar-cart{
+  display: flex;
+  height: 2px;
+  width: 60%;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  background-color: #dddddd;
+  align-items: center;
+}
+.bar-cart::before{
+  content:"";
+  height: 2px;
+  width: 60%;
+  background-color: var(--primary-color);
+  position: absolute;
+}
+.cart-top-item{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1.5px solid #dddddd;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: var(--secondary-color);
+  z-index: 2;
+}
+.cart-top-item ion-icon{
+  color: #dddddd;
+}
+.cart-bar-cart, .cart-bar-credit , .cart-bar-tick{
+  border: 1.5px solid var(--primary-color);
+}
+.cart-bar-cart ion-icon, .cart-bar-credit ion-icon , .cart-bar-tick ion-icon{
+  color: var(--primary-color);
+}
+
+
+/* =================================bar-cart================================= */
+
+
+
+

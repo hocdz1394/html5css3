@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../css/cart.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<!-- onload="showAll()" -->
+<body >
+    <div class="welcome">Chào mừng bạn đến với không gian nội thất</div>
+    <div class="container">
+        <header>
+            <div class="menu">
+                <div class="logo col1"><a href="./home.php"><img src="../img/logo.png" alt=""></a></div>
+                <nav id="col5" class="col5">
+                    <ul>
+                        <li><a href="./home.php">Trang chủ</a></li>
+                        <li><a href="./product.html">Sản phẩm</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                <div class="search col2_5">
+                    <input type="search" name="" id="" placeholder="   Tìm kiếm...">
+                    <div class="find"><ion-icon name="search"></ion-icon></div>
+                </div>
+                <div class="directional-icon col1_5">
+                    <a href="../project/page/cart.php"><ion-icon name="cart"></ion-icon><p id="cartnub"></p></a>
+                    <a href="./account.html"><ion-icon name="person-circle-outline"></ion-icon></a>
+                    <div class="number-cart"></div>
+                </div>
+            </div>
+        </header>    
+        <main>
+            <div class="container">
+                <div class="cart-top-wrap">
+                    <div class="bar-cart">
+                        <div class="cart-bar-cart cart-top-item">
+                            <ion-icon name="bag-handle"></ion-icon>
+                        </div>
+                        <div class="cart-bar-credit cart-top-item">
+                            <ion-icon name="card"></ion-icon>
+                        </div>
+                        <div class="cart-bar-tick cart-top-item">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="cart">
+                <section class="cart-left col6">
+                    <div id="addOnSP" class="sps">
+                        <!--  -->
+                        <div class="sp">
+                            <img src="../img/product/shop1.png">
+                            <div class="title-sp">
+                                <div class="colum1-title">
+                                    <div class="name-title">jabsdnakkcn</div>
+                                    <p>Giao trong vòng 3-5 ngày làm việc</p>
+                                    <div class="price-title" value="" >'723y49834'</div>
+                                </div>
+                                <div class="colum2-title">
+                                    <div class="quantity">
+                                        <a href="#" class="minus">-</a>
+                                        <input type="text" value="1" name="quantity" class="quantity" id="">
+                                        <a href="#" class="minus">+</a>
+                                    </div>
+                                    <a class="icon-trash" href=""><ion-icon name="trash"></ion-icon></a>
+                                </div>
+                                <input class="check-box" type="checkbox">
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </section>
+                <section class="cart-right col3-5">
+                    <h2 class="h2">Hoá đơn của bạn</h2>
+                    <div class="bill">
+                        <div class="items">
+                            <div class="text-item bold">Tổng tiền giỏ hàng</div>
+                            <div class="price-item" id="subtotal"></div>
+                        </div>
+                        <div class="items">
+                            <div class="tax bold">Tổng sản phẩm</div>
+                            <div class="price-item">2</div>
+                        </div>
+                        <div class="items">
+                            <div class="tax bold">Tổng tiền hàng</div>
+                            <div class="price-item">3.870.000 đ</div>
+                        </div>
+                        <div class="items">
+                            <div class="text-item bold">Tạm tính</div>
+                            <div class="price-item impot bold" id="tota">3.870.000 đ</div>
+                        </div>
+                        <a href="./pay.html"><input type="button" value="Đặt hàng"></a>
+                    </div>
+                </section>
+            </section>
+            <h2 class="h22">Sản phẩm tương tự</h2>
+            <section class="similar">
+                <div class="similar-pds">
+                    <img src="/img/product/shop1.png" alt="">
+                    <div class="name-sml">Sofa Annie xinh xắn</div>
+                    <div class="price-sml">3.870.000 đ</div>
+                    <div class="icon-sml"><ion-icon name="cart"></ion-icon>
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="similar-pds">
+                    <img src="/img/home/section/section3.2.webp" alt="">
+                    <div class="name-sml">Sofa Annie xinh xắn</div>
+                    <div class="price-sml">3.870.000 đ</div>
+                    <div class="icon-sml"><ion-icon name="cart"></ion-icon>
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="similar-pds">
+                    <img src="/img/home/section/section3.3.webp" alt="">
+                    <div class="name-sml">Sofa Annie xinh xắn</div>
+                    <div class="price-sml">3.870.000 đ</div>
+                    <div class="icon-sml"><ion-icon name="cart"></ion-icon>
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="similar-pds">
+                    <img src="/img/home/section/section3.4.webp" alt="">
+                    <div class="name-sml">Sofa Annie xinh xắn</div>
+                    <div class="price-sml">3.870.000 đ</div>
+                    <div class="icon-sml"><ion-icon name="cart"></ion-icon>
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="similar-pds">
+                    <img src="/img/home/section/section3.5.webp" alt="">
+                    <div class="name-sml">Sofa Annie xinh xắn</div>
+                    <div class="price-sml">3.870.000 đ</div>
+                    <div class="icon-sml"><ion-icon name="cart"></ion-icon>
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="text-about">
+                <div class="text1 col5">
+                    <img src="/img/logo2.png" alt="">
+                    <p>Condimentum adipiscing vel neque dis nam 
+                        parturient orci at scelerisque neque dis nam 
+                        parturient.
+                    </p>
+                    <div class="icon-text-about">
+                        <ion-icon name="paper-plane-outline"></ion-icon><span>451 Wall Street, UK, London</span><br>
+                        <ion-icon name="phone-portrait-outline"></ion-icon><span>Phone: (064) 332-1233</span><br>
+                        <ion-icon name="mail-outline"></ion-icon><span>Fax: (099) 453-1357</span>
+                    </div>
+                </div>
+                <div class="text2 col2">
+                    <span>OUR STORES</span>
+                    <ul>
+                        <li>New York</li>
+                        <li>London SF</li>
+                        <li>Edinburgh</li>
+                        <li>Los Angeles</li>
+                        <li>Chicago</li>
+                        <li>Las Vegas</li>
+                    </ul>
+                </div>
+                <div class="text2 col2">
+                    <span>OUR STORES</span>
+                    <ul>
+                        <li>New York</li>
+                        <li>London SF</li>
+                        <li>Edinburgh</li>
+                        <li>Los Angeles</li>
+                        <li>Chicago</li>
+                        <li>Las Vegas</li>
+                    </ul>
+                </div>
+                <div class="text2 col2">
+                    <span>OUR STORES</span>
+                    <ul>
+                        <li>New York</li>
+                        <li>London SF</li>
+                        <li>Edinburgh</li>
+                        <li>Los Angeles</li>
+                        <li>Chicago</li>
+                        <li>Las Vegas</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="icon-internet">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+            <div class="dc">project created by NguyenQuocHoc - PS28717 on 5-22-2023</div>
+        </footer>
+<script src="/js/home.js"></script>
+
+</body>
+</html>

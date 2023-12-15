@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pay</title>
+    <link rel="stylesheet" href="../css/pay.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="/js/pay.js"></script>
+</head>
+<body>
+    <div class="welcome">Chào mừng bạn đến với không gian nội thất</div>
+    <div class="container">
+        <header>
+            <div class="menu">
+                <div class="logo col1"><a href="./index.html"><img src="../img/logo.png" alt=""></a></div>
+                <nav id="col5"  class="col5">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./product.html">Sản phẩm</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                <div class="search col2_5">
+                    <input type="search" name="" id="" placeholder="   search...">
+                    <div class="find"><ion-icon name="search"></ion-icon></div>
+                </div>
+                <div class="directional-icon col1_5">
+                    <a href="./cart.html"><ion-icon name="cart"></ion-icon></a>
+                    <a href="./account.html"><ion-icon name="person-circle-outline"></ion-icon></a>
+                    <div class="number-cart"></div>
+                </div>
+            </div>
+        </header> 
+        <div class="container">
+            <div class="cart-top-wrap">
+                <div class="bar-cart">
+                    <div class="cart-bar-cart cart-top-item">
+                        <ion-icon name="bag-handle"></ion-icon>
+                    </div>
+                    <div class="cart-bar-credit cart-top-item">
+                        <ion-icon name="card"></ion-icon>
+                    </div>
+                    <div class="cart-bar-tick cart-top-item">
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="cart">
+            <section class="cart-left col6">
+                <h2 class="h2-cl">Địa chỉ giao hàng</h2>
+                <div class="pay-cart">
+                    <input placeholder="Họ tên" type="text">
+                    <input placeholder="Số điện thoại" type="text">
+                    <input placeholder="Địa chỉ" type="text">
+                    <input placeholder="Email" type="text">
+                </div>
+                <div class="card-number">
+                    <input type="text" placeholder="Địa chỉ cụ thể">
+                </div>
+                <div class="card-number">
+                    <input type="text" placeholder="Ghi chú">
+                </div><br><br>
+               
+                <h2 class="h2-cl">Hình thức thanh toán</h2>
+                <br>
+                <div class="pay-th">
+                    <div class="pay-th-text">
+                        <p>Mọi giao dịch đều được bảo mật và mã hóa. Thông tin thẻ tín dụng sẽ không bao giờ được lưu lại.</p>
+                        <br>
+                        <div class="httt">
+                            <input name="ip-rdo" type="radio">
+                            <p>Thanh toán bằng thẻ tín dụng  </p>
+                            <img src="../img/1.png" alt="">
+                        </div>
+                        <div class="httt">
+                            <input name="ip-rdo" type="radio">
+                            <p>Thanh toán bằng thẻ ATM</p>
+                        </div>
+                        <div class="httt">
+                            <input name="ip-rdo" type="radio">
+                            <p>Thanh toán bằng Momo </p>
+                            <img class="momo" src="../img/2.png" alt="">
+                        </div>
+                        <div class="httt">
+                            <input name="ip-rdo" type="radio">
+                            <p>Thanh toán khi nhận hàng</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cart-right col3-5">
+                    <h2>Tóm tắt đơn hàng</h2>
+                    <div class="bill">
+                        <div class="tt">
+                            <img src="/img/home/section/section3.1.webp" alt="">
+                            <div class="mid-tt">
+                                <div class="name-tt">Sofa Anie xinh xắn</div>
+                                <div class="btm-tt">
+                                    <input placeholder="1" min="1" type="number">
+                                    <div class="price-number">$ 387.0</div>
+                                </div>
+                            </div>
+                            <a href="#"><div class="icon-tt"><ion-icon name="close"></ion-icon></div></a>
+                        </div>
+                        <div class="tt">
+                            <img src="/img/home/section/section3.1.webp" alt="">
+                            <div class="mid-tt">
+                                <div class="name-tt">Sofa Anie xinh xắn</div>
+                                <div class="btm-tt">
+                                    <input placeholder="1" min="1" type="number">
+                                    <div class="price-number">$ 387.0</div>
+                                </div>
+                            </div>
+                            <a href="#"><div class="icon-tt"><ion-icon name="close"></ion-icon></div></a>
+                        </div>
+                        <div class="items">
+                            <div class="text-item bold">Thành tiền</div>
+                            <div class="price-item">$ 387.0</div>
+                        </div>
+                        <div class="items">
+                            <div class="tax bold">Thuế(10%)</div>
+                            <div class="price-item">$ 38.7</div>
+                        </div>
+                        <div class="items">
+                            <div class="text-item bold">Tổng cộng</div>
+                            <div class="price-item impot bold">$ 343.3</div>
+                        </div>
+                    </div>
+                    <a href="./success.html">
+                        <div class="tttt">
+                             Thanh toán đơn hàng
+                        </div>
+                    </a>
+
+            </section>
+        </section>
+        <footer>
+            <div class="text-about">
+                <div class="text1 col5">
+                    <img src="./img/logo2.png" alt="">
+                    <p>Condimentum adipiscing vel neque dis nam 
+                        parturient orci at scelerisque neque dis nam 
+                        parturient.
+                    </p>
+                    <div class="icon-text-about">
+                        <ion-icon name="paper-plane-outline"></ion-icon><span>451 Wall Street, UK, London</span><br>
+                        <ion-icon name="phone-portrait-outline"></ion-icon><span>Phone: (064) 332-1233</span><br>
+                        <ion-icon name="mail-outline"></ion-icon><span>Fax: (099) 453-1357</span>
+                    </div>
+                </div>
+                <div class="text2 col2">
+                    <span>OUR STORES</span>
+                    <ul>
+                        <li>New York</li>
+                        <li>London SF</li>
+                        <li>Edinburgh</li>
+                        <li>Los Angeles</li>
+                        <li>Chicago</li>
+                        <li>Las Vegas</li>
+                    </ul>
+                </div>
+                <div class="text2 col2">
+                    <span>OUR STORES</span>
+                    <ul>
+                        <li>New York</li>
+                        <li>London SF</li>
+                        <li>Edinburgh</li>
+                        <li>Los Angeles</li>
+                        <li>Chicago</li>
+                        <li>Las Vegas</li>
+                    </ul>
+                </div>
+                <div class="text2 col2">
+                    <span>OUR STORES</span>
+                    <ul>
+                        <li>New York</li>
+                        <li>London SF</li>
+                        <li>Edinburgh</li>
+                        <li>Los Angeles</li>
+                        <li>Chicago</li>
+                        <li>Las Vegas</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="icon-internet">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+            <div class="dc">project created by NguyenQuocHoc - PS28717 on 5-22-2023</div>
+        </footer>
+        
+</body>
+</html> 
+
